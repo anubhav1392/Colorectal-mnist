@@ -68,13 +68,13 @@ def flatten_data(input_data):
 
 flatten_train_data,flatten_test_data=flatten_data(train_data),flatten_data(test_data)
 
-#####################Learning Rate Scheduling
-def step_decay(epoch):
-    initial_lrate=0.1
-    drop=0.5
-    epoch_drop=5.0
-    lrate=initial_lrate*math.pow(drop,math.floor((1+epoch)/epoch_drop))
-    return lrate
+#####################Learning Rate Scheduling (Just in case anyone want to apply Learning rate scheduling)
+#def step_decay(epoch):
+#    initial_lrate=0.1
+#    drop=0.5
+#    epoch_drop=5.0
+#    lrate=initial_lrate*math.pow(drop,math.floor((1+epoch)/epoch_drop))
+#    return lrate
 
 #####################CallBacks Path
 path=r'C:\Users\Anu\Downloads\Compressed\colorectal-histology-mnist\model_callbacks.hd5'
